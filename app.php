@@ -10,7 +10,7 @@ function insertar($headerUrl,$footerUrl,$targetUrl)
 	$target = str_ireplace('<header>', $header, $target); // se inserta el header en target.html
 	$target = str_ireplace("<footer>", $footer, $target); // se inserta el footer en target.html
 
-	file_put_contents($url,$target);//se guarda el archivo modificado
+	file_put_contents($targetUrl,$target);//se guarda el archivo modificado
 	return true;
 }
 ?>
