@@ -1,7 +1,8 @@
 <?php
 include 'app.php';
-insertar("header.html","")
 
-header("Location: $index.php");//se redirecciona a la url
+	if(insertar("header.html","footer.html","target.html"))
+		header("Location: $index.php");//se redirecciona a la url
+	else
+		echo "algo salio mal";
 ?>
-function insertar($headerUrl,$footerUrl,$targetUrl)
