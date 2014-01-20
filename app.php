@@ -1,6 +1,6 @@
 <?php
 
-//metodo donde esta recibe el header, el footer y el target del archivo a cambiar
+//metodo donde esta recibe el header, el footer y en el archivo target
 function insertar($headerUrl,$footerUrl,$targetUrl)
 {
 	$header = file_get_contents($headerUrl); //cargo el archivo header.html
