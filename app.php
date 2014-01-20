@@ -13,7 +13,7 @@ function insertar($headerUrl,$footerUrl,$targetUrl)
 	file_put_contents($targetUrl,$target);//se guarda el archivo modificado
 	return true;
 }
-
+//metodo que reinicia el el header, el footer y en el archivo target 
 function reiniciar($headerUrl,$footerUrl,$targetUrl){
 
 	$header = file_get_contents($headerUrl); //cargo el archivo header.html 
