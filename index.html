@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
+	<meta charset="utf-8">
 	<title>pagina de test</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,9 +18,11 @@
   </p>
   <iframe src="target.html"></iframe> 
 </section>
- <form action="controller.php" method="get">
-  	<p>presiona el boton para insertar </p>
-  	<input type="submit" value="cambio!"/> 
-  </form>
+ <form name="form" id="form" action="controller.php" method="get">
+    <p>presiona el boton para insertar </p>
+  	<input type="submit" value="cambio!"/>
+    <input type="button" value="Quiero volverlo a hacer XD" onclick='javascript:window.location="controller.php?accion=reset";'/>
+</form> 
+
 </body>
 </html>
